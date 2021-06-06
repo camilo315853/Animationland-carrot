@@ -10,7 +10,7 @@
     --background-walls: rgb(78, 70, 43);
     --grass-one:rgb(168, 152, 98);
     --grass-two: rgb(198, 231, 199);
-    --shadow-primary: 14px 10px 10px -4px #2e1a1ad5;
+    --shadow-primary: 12px 10px 8px -5px #4d2b2bd5;
     --shadow-secondary: 5px 5px 6px 0px rgba(38,38,38,0.99), inset -10px -10px 15px 0px #262626;
     
 }

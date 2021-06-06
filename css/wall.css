@@ -3,7 +3,7 @@
  .wall {
     width: 250px;
     background-color: var(--background-walls);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-primary);
     border-radius: 50px 50px 0 0;
     overflow: hidden;
 }
