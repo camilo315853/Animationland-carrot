@@ -1,0 +1,170 @@
+ /* Drawing Bunny */
+
+ .fruit {
+    width: 80px;
+/*  background-color: rgb(183, 240, 172); */
+}
+
+
+    .container__carrot {
+        position:absolute;
+        top: 25px;
+        width: 100%;
+    }
+    .carrot{
+        width: 100%;
+        position:absolute;
+        height:160px;
+        border-radius: 55%  50%  50%  55%  / 60%   60%   40%  40%;
+        background:#e76d2b;
+        transform:rotate(180deg);
+        box-shadow: -5px -5px 6px -1px rgba(38,38,38,0.99), inset 6px -5px 19px -2px rgba(38,38,38,0.99);
+    }
+
+  /* Lines */
+    .l1, .l2, .l3, .l4, .l5{
+        position:absolute;
+        border-radius:3px;
+        background:#662601;
+        height: 2px;
+    }
+    .l1{
+      width:35px;
+      top: 28px;
+      left: 15px;
+    }
+    .l2{
+      width:20px;
+      top: 40px;
+      left: 45px;
+    }
+    .l3{
+      width:20px;
+      top: 110px;
+      left: 40px; 
+    }
+    .l4{
+      width:25px;
+      top: 120px;
+      left: 10px; 
+    }
+    .l5{
+      width:12px;
+      top: 135px;
+      left: 35px;  
+    }
+    .eye-left,.eye-right{
+      position:absolute;
+      width:25px;
+      height:25px;
+      border-radius:100%;
+      background:black;
+      animation:cerrar 2.1s alternate infinite;
+      }
+    .eye-left{margin:80px 45px}
+    .eye-right{margin:80px 0}
+    .iris-medium{
+      position:absolute;
+      width:8px;
+      height:8px;
+      border-radius:100%;
+      background:white;
+      margin:17px 5px;
+      animation:shake .21s alternate infinite;
+    }
+    .iris-small{
+      position:absolute;
+      width:4px;
+      height:4px;
+      border-radius:100%;
+      background:white;
+      margin: 8px 22px;
+      animation:shake .21s alternate infinite;
+    }
+    .mouth__outer{
+      position:absolute;
+      width:20px;
+      height:12px;
+      border-radius:50px 50px 0 0;
+      background:black;
+      margin:65px 25px;
+    }
+    .mouth__inner{
+      position:absolute;
+      width:15px;
+      height:7px;
+      border-radius: 50px 50px 0 0;
+      background:#E00B44; 
+      margin: 3px 3px;
+      animation: go3 3s alternate infinite;
+    }
+    .sheets{
+      position:absolute;
+      width:20px;
+      height:50px;
+      border-radius:100%;
+      background: #027a30;
+      left: 32px;
+      bottom: -15px;
+      }
+    .sheets::before{
+  content:"";
+  position:absolute;
+  width:20px;
+  height:50px;
+  border-radius:100%;
+  background: #0e853f;
+  margin:9px -12px;
+  transform:rotate(-30deg)
+    }
+    .sheets::after{
+      content:"";
+      position:absolute;
+      width:20px;
+      height:50px;
+      border-radius:100%;
+      background: #0e853f;
+      margin:9px 12px;
+      transform:rotate(30deg)
+    }
+    .bow{
+      position:absolute;
+      width: 40px;
+      height: 40px;
+      border-top: 3px solid white;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+       border-radius: 100px / 50px;
+      transform:rotate(-60deg);
+      left: 8px;
+      top: 18px;
+    }
+    .heart {
+      position: absolute;
+      width: 50px;
+      height: 40px;
+      transform:scale(.5);
+      top: 95px;
+      left: 25px; 
+     
+    }
+    .heart:before,
+    .heart:after {
+      position: absolute;
+      content: "";
+      left: 16px;
+      top: 0;
+      width: 15px;
+      height: 25px;
+      background: #9B0473;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    .heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin :100% 100%;
+      border-right:3px solid #6B0358
+    }
+

@@ -1,0 +1,104 @@
+:root {
+
+    --background-primary: rgb(205, 217, 250);
+    --background-secundary: rgb(194, 210, 212);
+    --background-walls: rgb(78, 70, 43);
+    --grass-one:rgb(168, 152, 98);
+    --grass-two: rgb(198, 231, 199);
+    --shadow-primary: 14px 10px 10px -4px #2e1a1ad5;
+    --shadow-secondary: 5px 5px 6px 0px rgba(38,38,38,0.99), inset -10px -10px 15px 0px #262626;
+    
+}
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.phone {
+    position: relative;
+    border: 8px solid black;
+    border-radius: 40px;
+    height: 600px;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: var(--shadow-primary);
+    background-color: var(--background-primary);
+    background-image:
+    repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+    repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+    linear-gradient(60deg, var(--background-secundary) 25%, transparent 25%, transparent 75%, var(--background-secundary) 75%, var(--background-secundary)),
+    linear-gradient(120deg, var(--background-secundary) 25%, transparent 25%, transparent 75%, var(--background-secundary) 75%, var(--background-secundary));
+    background-size: 70px 120px;
+}
+.layers {
+    position: absolute;
+    bottom: 0;
+}
+.layer-1 {
+    z-index: 110;
+    height: 445px;
+    right: 60px;
+}
+.layer-2 {
+    z-index: 20;
+    height: 445px;
+    left: 60px;
+}
+.layer-3 {
+    z-index: 30;
+    height: 400px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;   
+}
+.layer-4 {
+    z-index: 40;
+    height: 345px;
+    left: 30px;
+}
+.layer-5 {
+    z-index: 50;
+    height: 300px;
+    left: 0;    
+}
+.layer-6 {
+    z-index: 60;
+    height: 245px;
+    right: 30px;
+}
+.layer-7 {
+    z-index: 70;
+    height: 200px;
+    right: 0;
+}
+.layer-8 {
+    z-index: 80;
+    width: 100%;
+}
+.layer-9 {
+    z-index: 90;
+    left: 0;
+}
+.layer-10 {
+    z-index: 100;
+    right: 155px;
+}
+.layer-11 {
+    z-index: 85;
+    bottom: 50px;
+    left: 10px;
+}
+.layer-12 {
+    z-index: 75;
+    bottom: 120px;
+    right: 110px;
+}
+ 
+
+    
+ 
+        
+
+    
