@@ -1,0 +1,60 @@
+
+    :root {
+      --bunny: rgb(2, 24, 31);
+    }
+    
+    
+    .bunny__one, 
+    .bunny__two{
+        position:absolute;
+        width:50px;
+        height:45px;
+        border-radius:100%;
+        background:var(--bunny);
+        box-shadow: var(--shadow);
+        }
+     
+      .head__one,
+      .head__two{
+        position:absolute;
+        width:35px;
+        height:35px;
+        border-radius:100%;
+        background: var(--bunny);
+      }
+        .head__one{
+          margin:-21px 21px;
+        }
+        .head__two{
+          margin:-21px -12px;
+        }
+      .tail__one,
+      .tail__two{
+        position:absolute;
+        width:21px;
+        height:21px;
+        border-radius:100%;
+        background:rgb(112, 26, 75);
+      }
+      .tail__one{margin:33px -30px}
+      .tail__two{margin:33px 45px}
+      .ear{
+        position:absolute;
+        width:17px;
+        height:50px;
+        border-radius:100%;
+        background: var(--bunny);
+        margin:-30px 0px;
+        animation:sube 7s alternate infinite;
+      }
+      .ear::before{
+        content:"";
+        position:absolute;
+        width:17px;
+        height:50px;
+        border-radius:100%;
+        background: var(--bunny);
+        margin:0px 21px
+      }
+    
+   
