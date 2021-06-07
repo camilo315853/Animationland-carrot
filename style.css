@@ -1,0 +1,185 @@
+@import url(/css/lawn.css);
+@import url(/css/fruit.css);
+@import url(/css/wall.css);
+@import url(/css/bunny.css);
+@import url(/css/bush.css);
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+:root {
+    --background-walls: rgb(126, 113, 70);
+    --background-bush: rgb(78, 70, 43);
+    --grass-one:rgb(199, 188, 153);
+    --grass-two: rgb(168, 152, 98);
+    --shadow-primary: 12px 10px 8px -5px #4d2b2bd5;
+    --shadow-secondary: 5px 5px 6px 0px rgba(38,38,38,0.99), inset -10px -10px 15px 0px #262626;
+    
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.phone {
+    position: relative;
+    border: 8px solid black;
+    border-radius: 40px;
+    height: 600px;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: var(--shadow-primary);
+	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+    counter-reset: game;
+}
+.title {
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 2.2px;
+    font-size: 25px;
+    font-family: 'ZCOOL KuaiLe', cursive;    
+    opacity: 80%;
+}
+
+input[type=checkbox] {
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+    width: 80px;
+    height: 130px;
+    top: 0;
+    z-index: 2;
+
+}
+input[type=checkbox]:focus {
+    appearance: none;
+    outline: none;    
+}
+input:checked {
+    counter-increment: game;
+}
+.score {
+    position: absolute;
+    letter-spacing: 2.5px;
+    top: 65px;
+    left: 110px;
+}
+.score:after {
+    content: counter(game);
+}
+
+
+
+
+.layers {
+    position: absolute;
+    bottom: 0;
+}
+/* Fruit 1 */
+.layer-1 {
+    z-index: 10;
+    height: 445px;
+    right: 60px;
+
+    animation: carrot-one 3.2s ease-in-out alternate infinite;
+}
+    @keyframes carrot-one {
+        0% {transform: translateY(-30px);}
+        25% {transform: translateY(80px);}
+        50% {transform: translateY(-80px);}
+        75% {transform: translateY(80px);} 
+        100% {transform: translateY(0);}
+       
+    }
+    
+
+/* Fruit 2 */
+.layer-2 {
+    z-index: 20;
+    height: 445px;
+    left: 60px;
+    animation: carrot-two 2.2s ease-in-out alternate infinite;
+}
+    @keyframes carrot-two {
+        0% {transform: translateY(-80px);}
+        50% {transform: translateY(80px);}
+        100% {transform: translateY(0);}
+
+    }
+    
+
+/* wall 1 */
+.layer-3 {
+    z-index: 30;
+    height: 400px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;   
+}
+/* Fruit 3 */
+.layer-4 {
+    z-index: 40;
+    height: 345px;
+    left: 30px;
+    animation: carrot-three 4.5s linear alternate infinite;
+
+}
+    @keyframes carrot-three {
+        0% {transform: translateY(-80px);}
+        25% {transform: translateY(80px);}
+        50% {transform: translateY(-80px);}
+        60% {transform: translateY(60px);}
+        80% {transform: translateY(-80px);}
+        100% {transform: translateY(0);}
+    }
+  
+/* wall 2 */
+.layer-5 {
+    z-index: 50;
+    height: 300px;
+    left: 0;    
+}
+/* Fruit 4 */
+.layer-6 {
+    z-index: 60;
+    height: 245px;
+    right: 30px;
+    animation: carrot-four 3s ease-in alternate infinite;
+
+}
+    @keyframes carrot-four {
+        0% {transform: translateY(80px);}
+        25% {transform: translateY(-20px);}
+        50% {transform: translateY(80px);}
+        100% {transform: translateY(-80px);} 
+        
+    }
+   
+
+/* wall 3 */
+.layer-7 {
+    z-index: 70;
+    height: 200px;
+    right: 0;
+}
+/* Lawn Center */
+.layer-8 {
+    z-index: 80;
+    left: 145px;
+    bottom: -50px;
+    /* width: 100%; */
+}
+
+  
+/* Bunny Left */
+.layer-11 {
+    z-index: 71;
+    bottom: 30px;
+    left: 10px;
+}
+/* Bunny Right */
+.layer-12 {
+    z-index: 72;
+    bottom: 95px;
+    right: 130px;
+}

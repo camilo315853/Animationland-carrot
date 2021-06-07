@@ -1,0 +1,41 @@
+
+.bush {
+    position: relative;
+    background: var(--background-bush);
+    border-radius: 50%;
+    width: 180px;
+    height: 200px;
+    filter: blur(1.2px);
+    animation: vibration 5s alternate infinite;
+    
+  }
+  .bush:before,
+  .bush:after {
+    content: "";
+    position: absolute;
+    background: var(--background-bush);
+    border-radius: 50%;
+    bottom: 0;
+  }
+  .bush:before{
+    z-index: 30;
+    width: 150px; 
+    height: 150px; 
+    right: 115px;
+    animation: vibration 5.2s alternate infinite;
+    
+  }
+  .bush:after {
+    z-index: 20;
+    width: 140px; 
+    height: 100px; 
+    right: 200px;
+    animation: vibration 5.6s alternate infinite;
+    
+  }
+  @keyframes vibration {
+    0% {transform: translateY(0);}
+    30% {transform: translateY(-3px);}
+    60% {transform: translateY(-5px);}
+    0% {transform: translateY(0);}
+  }

@@ -1,0 +1,47 @@
+
+.lawn__container {
+	transform: scale(65%);
+}
+ .lawn {
+	width: 200px; height: 60px;
+	background: #fff;
+	border-radius: 200px;
+	position: relative; 
+  	opacity: 70%;
+}
+
+.lawn:before, .lawn:after {
+	content: '';
+	position: absolute; 
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	
+
+}
+
+.lawn:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
+.lawn__one {
+	top: 10px;
+	left: 30px;
+	animation: moveclouds 65s linear infinite;
+}
+.lawn__two {
+	top: 70px;
+  	left: 160px;
+	animation: moveclouds 28s linear infinite;
+}
+.lawn__three {
+  	top: 145px;
+  	right: 75px;
+	animation: moveclouds 58s linear infinite;
+}
+@keyframes moveclouds {
+	0% {transform: translateX(450px);}
+	100% { transform: translateX(-450px);}
+}
